@@ -17,21 +17,8 @@ void requestEvent() {
   char strVal[20];
   char tem[2];
   char hum[3]="61";
-
-
-  //Serial.println(t);
-
   dtostrf(t,2,0,tem);
   dtostrf(h,2,0,hum);
-  
  sprintf(strVal,"%s %s",(unsigned char *)tem,(unsigned char *)hum);
-  
-
   Wire.write(strVal);
-  
-   
-  
- 
-
-
 }
